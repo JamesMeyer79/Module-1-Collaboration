@@ -9,14 +9,15 @@ while True:
     lastname = input("Please input you last name (or input 'ZZZ' if you want to quit):")
     if lastname == "ZZZ":
         break
-
+#This piece of code has the user input their last name and allows for a break if ZZZ is inputted.
     firstname = input("Please input your first name:")
-
+#This takes the users first name.
     gpa = float(input("Please enter your GPA:"))
-
+#This takes the users GPA.
     if gpa >= 3.5:
         print(f"{firstname} {lastname} (GPA: {gpa}) You made the Dean's list.")
     elif gpa >= 3.25:
         print(f"{firstname} {lastname} (GPA: {gpa}) You made the honor roll.")
     else:
         print(f"{firstname} {lastname} (GPA: {gpa}) You did not make the dean list or honor roll.")
+#This if statement determines if the student makes the honor roll, the Dean's list, or does not make it. 
